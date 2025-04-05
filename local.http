@@ -1,0 +1,31 @@
+### Listar todos os livros
+GET http://localhost:3010/livros
+
+### Obter um livro por ID
+GET http://localhost:3010/livros/3
+
+### Criar um novo livro
+POST http://localhost:3010/livros
+Content-Type: application/json
+
+{
+    "id": 3,
+    "titulo": "Harryr333r",
+    "num_paginas": 2223300,
+    "isbn": "978-3-16-1413332322231230-0",
+    "editora": "Editora g333asdFlan"
+}
+
+### Atualizar um livro por ID
+PUT http://localhost:3010/livros/1
+Content-Type: application/json
+
+{
+    "titulo": "Attualizou",
+    "numpaginas": 2120,
+    "isbn": "978-13-16-141231230-0",
+    "editora": "Editora New"
+}
+
+### Remover um livro por ID
+DELETE http://localhost:3010/livros/1
